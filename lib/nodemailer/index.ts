@@ -37,7 +37,7 @@ export async function generateEmailBody(
             <p>Don't miss out - <a href="${product.url}" target="_blank" rel="noopener noreferrer">buy it now</a>!</p>
             <img src="https://i.ibb.co/pwFBRMC/Screenshot-2023-09-26-at-1-47-50-AM.png" alt="Product Image" style="max-width: 100%;" />
           </div>
-          <p>Stay tuned for more updates on ${product.title} and other products you're tracking.</p>
+          <p>Stay tuned for more updates on ${product.title} and other product you're tracking.</p>
         </div>
       `;
       break;

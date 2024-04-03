@@ -76,7 +76,7 @@ const Modal = ({productId}: Props) => {
                                 />
                             </div>
                             <h4 className='dialog-head_text'>
-                                Don't worry, we will keep the track of your products and keep you updated with pricing alerts right in your inbox.
+                                Don't worry, we will keep the track of your product and keep you updated with pricing alerts right in your inbox.
                             </h4>
                             <p className='text-sm text-gray-600 mt-2'>
                                 Do not miss any bargain ever again with our timely alerts!
