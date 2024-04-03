@@ -14,13 +14,13 @@ export async function GET(request: Request) {
   try {
     connectToDB();
 
-    const products = await Product.find({});
+    const product = await Product.find({});
 
-    if (!products) throw new Error("No product fetched");
+    if (!product) throw new Error("No product fetched");
 
     // ======================== 1 SCRAPE LATEST PRODUCT DETAILS & UPDATE DB
     const updatedProducts = await Promise.all(
-      products.map(async (currentProduct) => {
+      product.map(async (currentProduct) => {
         // Scrape product
         const scrapedProduct = await scrapeAmazonProduct(currentProduct.url);
 
